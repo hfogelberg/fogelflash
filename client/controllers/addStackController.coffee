@@ -17,8 +17,8 @@ Template.addStack.events
 		comment = template.find('.comment').value
 		username = Meteor.user().username
 
-		slug = slugify(username + ' ' + ' ' + toLang + ' ' + title + ' ')
+		# slug = slugify(username + ' ' + ' ' + toLang + ' ' + title + ' ')
 
-		Meteor.call 'createStack', title, fromLang, toLang, comment, username, slug, (error) ->
+		Meteor.call 'createStack', title, fromLang, toLang, comment, username, (error) ->
 		Meteor.call 'createLanguage', fromLang, (error) ->
 		Meteor.call 'createLanguage', toLang, (error) ->

@@ -11,5 +11,5 @@ twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 iron:router
 coffeescript
-yasaricli:slugify
 sergeyt:typeahead
+anti:i18n

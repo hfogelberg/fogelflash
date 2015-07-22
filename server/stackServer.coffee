@@ -10,14 +10,14 @@ Meteor.startup ->
 		return Languages.find()
 
 Meteor.methods
-	'createStack': (title, fromLang, toLang, comment, username, slug) ->
+	'createStack': (title, fromLang, toLang, comment, username) ->
     Stacks.insert
     	title: title
     	fromLang: fromLang
     	toLang: toLang
     	comment: comment
     	username: username
-    	slug: slug
+    	# slug: slug
     	createdDate: new Date()
 
   'createLanguage': (name)->
