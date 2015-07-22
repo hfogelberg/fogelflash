@@ -39,5 +39,7 @@ Router.map ->
       Session.set 'slug', @params._id
     data: cards: ->
       Cards.find()
+
+  @route 'info'
       
   return
