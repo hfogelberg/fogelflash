@@ -3,6 +3,7 @@ Router.configure
   notFoundTemplate: 'not-found'
 Router.map ->
   @route 'home',
+    template: 'stacks'
     path: '/',
     waitOn:->
       @subscribe 'stacks'
