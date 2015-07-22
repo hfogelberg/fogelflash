@@ -4,7 +4,10 @@ Router.configure
 Router.map ->
   @route 'home',
     path: '/',
-    template: 'index'
+    waitOn:->
+      @subscribe 'stacks'
+    data: stacks: ->
+      Stacks.find()
     	
   @route 'addStack',
     waitOn: ->
