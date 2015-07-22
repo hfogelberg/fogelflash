@@ -1,0 +1,25 @@
+<template name='navbar'>
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Flashcards</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                    <a href="/stacks"><i class="glyphicon glyphicon-home"></i>Korthögar</a>
+                </li>
+                {{#if currentUser}}
+                    <li><a href="/addStack"><i class="glyphicon glyphicon-book"></i>Ny korthög</a></li>
+                    <li><a href="/users/{{currentUser.username}}">Mina korthögar</a></li>
+                {{/if}}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">{{> loginButtons}}</ul>
+        </div>
+    </div>
+</template> 

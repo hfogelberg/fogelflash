@@ -1,0 +1,21 @@
+<template name='flashcards'>
+	<a href='/practice/{{slug}}' class='btn btn-lg btn-danger col-sm-offset-2'>Öva</a>
+	<hr>
+	{{>addFlashcard}}
+	<hr>
+	<table class='table table-bordered'>
+		<tbody>
+			{{#each cards}}
+				{{> card}}
+			{{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name='card'>
+	<tr>
+		<td>{{fromText}}</td>
+		<td>{{toText}}</td>
+		<td>{{comment}}</td>
+	</tr>
+</template>
