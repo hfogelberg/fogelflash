@@ -1,30 +1,32 @@
 <template name='addFlashcard'>
-	<form class="form-horizontal">
-		<div class='form-group '>
-			<label for='fromText' class='col-sm-2'>Från</label>
-			<div class='col-sm-10'>
-      	<input class="form-control fromText" name="fromText" type="text"/>
-      </div>
-		</div>
-
-		<div class='form-group '>
-			<label for='toText' class='col-sm-2'>Till</label>
-			<div class='col-sm-10'>
-      	<input class="form-control toText" name="toText" type="text"/>
-      </div>
-		</div>
-
-		<div class='form-group '>
-			<label for='comment' class='col-sm-2'>Kommentar</label>
-			<div class='col-sm-10'>
-				<textarea class='form-control comment' rows='2' name='comment' ></textarea>
+	<div class='addFlashcard'>
+		<form class="form-horizontal addCardForm">
+			<div class='form-group '>
+				<label for='fromText' class='col-sm-2'>Från</label>
+				<div class='col-sm-10'>
+	      	<input class="form-control fromText" name="fromText" type="text"/>
+	      </div>
 			</div>
-		</div>
 
-  	<div class="form-group">
-    	<div class="col-sm-offset-2 col-sm-10">
-				<input type='button' class='btn btn-default addCards glyphicon glyphicon-edit' value='Spara'>
+			<div class='form-group '>
+				<label for='toText' class='col-sm-2'>Till</label>
+				<div class='col-sm-10'>
+	      	<input class="form-control toText" name="toText" type="text"/>
+	      </div>
 			</div>
-		</div>
-	</form>
+
+			<div class='form-group '>
+				<label for='comment' class='col-sm-2'>Kommentar</label>
+				<div class='col-sm-10'>
+					<textarea class='form-control comment' rows='2' name='comment' ></textarea>
+				</div>
+			</div>
+
+	  	<div class="form-group">
+	    	<div class="col-sm-offset-2 col-sm-10">
+					<input type='button' class='btn btn-default addCards glyphicon glyphicon-edit' value='Spara'>
+				</div>
+			</div>
+		</form>
+	</div>
 </template>

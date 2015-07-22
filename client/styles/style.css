@@ -1,3 +1,26 @@
+body {
+	background-color: #F4F1BD;
+}
+
 i { 
 	margin-right: 5px;
 }
+
+.addFlashcard {
+	display: none;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.centered{
+	margin-right: 0 auto important;
+	margin-left: 0 auto important;
+} 

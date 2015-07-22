@@ -8,3 +8,5 @@ Template.addFlashcard.events
 		stack = Session.get 'slug'
 
 		Meteor.call 'createCard', fromText, toText, comment, stack, (error) ->
+
+		template.find('.addCardForm').reset()
