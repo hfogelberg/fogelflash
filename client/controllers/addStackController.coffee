@@ -22,3 +22,5 @@ Template.addStack.events
 		Meteor.call 'createStack', title, fromLang, toLang, comment, username, (error) ->
 		Meteor.call 'createLanguage', fromLang, (error) ->
 		Meteor.call 'createLanguage', toLang, (error) ->
+
+		Router.go('/')
