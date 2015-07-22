@@ -1,5 +1,4 @@
 <template name='stacks'>
-	<h2>Stacks</h2>
 	{{#each stacks}}
 		{{> stack}}
 	{{/each}}
@@ -8,8 +7,8 @@
 <template name='stack'>
 	<div class='well'>
 		<h2>{{title}}</h2>
-		<div>{{toLang}}</div>
+		<div>{{fromLang}} till {{toLang}}</div>
 		<p>{{comment}}</p>
-		<a href='flashcards/{{slug}}' class='btn btn-primary showCardsBtn'>Öppna</a>
+		<a href='flashcards/{{_id}}' class='btn btn-primary showCardsBtn'>Öppna</a>
 	</div>
 </template>

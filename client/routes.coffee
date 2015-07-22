@@ -28,11 +28,11 @@ Router.map ->
       Cards.find()
 
   @route 'practice',
-    path: 'practice/:slug',
+    path: 'practice/:_id',
     template: 'practice'
     waitOn: ->
-      @subscribe 'cards', @params.slug
-      Session.set 'slug', @params.slug
+      @subscribe 'cards', @params._id
+      Session.set 'slug', @params._id
     data: cards: ->
       Cards.find()
       
