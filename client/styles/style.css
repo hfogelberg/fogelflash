@@ -19,11 +19,6 @@ h1 {
     background-color: transparent;
 }
 
-.centered{
-	margin-right: 0 auto important;
-	margin-left: 0 auto important;
-} 
-
 .well {
    background-color: rgba(244, 241, 189, 0.6);
 }
